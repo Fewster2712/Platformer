@@ -1,0 +1,74 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://PlayerBody.cs" type="Script" id=1]
+[ext_resource path="res://Art/Player/idle.png" type="Texture" id=2]
+[ext_resource path="res://Art/Player/run (1).png" type="Texture" id=3]
+[ext_resource path="res://Art/Player/run (2).png" type="Texture" id=4]
+[ext_resource path="res://Art/Player/run (3).png" type="Texture" id=5]
+[ext_resource path="res://Art/Player/run (4).png" type="Texture" id=6]
+[ext_resource path="res://Art/Player/run (5).png" type="Texture" id=7]
+[ext_resource path="res://Art/Player/run (7).png" type="Texture" id=8]
+[ext_resource path="res://Art/Player/run (6).png" type="Texture" id=9]
+[ext_resource path="res://Art/Player/fall.png" type="Texture" id=10]
+[ext_resource path="res://Art/Player/jump (1).png" type="Texture" id=11]
+[ext_resource path="res://Art/Player/jump (2).png" type="Texture" id=12]
+[ext_resource path="res://Art/Player/jump (3).png" type="Texture" id=13]
+[ext_resource path="res://Art/Player/jump (4).png" type="Texture" id=14]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.19418, 11.0147 )
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "idle",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "run",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": false,
+"name": "fall",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "jump",
+"speed": 8.0
+} ]
+_sections_unfolded = [ "Resource" ]
+
+[node name="Player" type="Node2D" index="0"]
+
+position = Vector2( 427, 219 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PlayerBody" type="KinematicBody2D" parent="." index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+
+[node name="Playershape" type="CollisionShape2D" parent="PlayerBody" index="0"]
+
+position = Vector2( 0.5, 4 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Playersprite" type="AnimatedSprite" parent="PlayerBody" index="1"]
+
+frames = SubResource( 2 )
+animation = "idle"
+
+
