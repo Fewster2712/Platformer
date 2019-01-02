@@ -95,7 +95,7 @@ public class PlayerBody : KinematicBody2D
             var enemy= GetParent().GetParent().GetNode<Node2D>("Enemy").GetNode<KinematicBody2D>("Enemybody");
             var dist = this.GetGlobalPosition().DistanceTo(enemy.GetGlobalPosition());
             var dir = GetNode<AnimatedSprite>("Playersprite").FlipH;  
-            if(enemy.GlobalPosition.x - this.GlobalPosition.x <= rangex && enemy.GlobalPosition.y - this.GlobalPosition.y <= rangey)
+            if(enemy.GlobalPosition.x - this.GlobalPosition.x <= rangex && enemy.GlobalPosition.y - this.GlobalPosition.x <= rangey)
             {
                 if(dir == false && enemy.GlobalPosition.x > this.GlobalPosition.x)
                 {
