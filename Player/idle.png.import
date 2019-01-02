@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/idle.png-6a1adb3f925141289cd33ec150994dae.stex"
+path="res://.import/idle.png-b2c11c44d3ca70aade746b2b0f34a26a.stex"
 
 [deps]
 
-source_file="res://Art/Player/idle.png"
-dest_files=[ "res://.import/idle.png-6a1adb3f925141289cd33ec150994dae.stex" ]
+source_file="res://Player/idle.png"
+dest_files=[ "res://.import/idle.png-b2c11c44d3ca70aade746b2b0f34a26a.stex" ]
 
 [params]
 

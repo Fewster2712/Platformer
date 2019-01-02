@@ -11,9 +11,11 @@ public class PlayerBody : KinematicBody2D
     const int minspeed = 10;
     const int jumppower = -350;
     const int deacl = 5;
-    const int range = 25;
+    const int rangex = 45;
+    const int rangey = 15;
     bool onFloor = false;
     Vector2 velocity;
+    bool attackcooldown = false;
     //Movement ended
     
 
@@ -88,16 +90,26 @@ public class PlayerBody : KinematicBody2D
         //Movement ended
 
         //Attack
-        var root = GetTree().GetRoot();
-        var enemy = (Node2D)root.GetNode("Enemy");
-        enemy.
+        if(Input.IsKeyPressed((int) KeyList.F) && attackcooldown == false)
+        {
+            var enemy= GetParent().GetParent().GetNode<Node2D>("Enemy").GetNode<KinematicBody2D>("Enemybody");
+            var dist = this.GetGlobalPosition().DistanceTo(enemy.GetGlobalPosition());
+            var dir = GetNode<AnimatedSprite>("Playersprite").FlipH;  
+            if(enemy.GlobalPosition.x - this.GlobalPosition.x <= rangex && enemy.GlobalPosition.y - this.GlobalPosition.y <= rangey)
+            {
+                if(dir == false && enemy.GlobalPosition.x > this.GlobalPosition.x)
+                {
+                    enemy.GetNode<Sprite>("Enemysprite").Visible = !enemy.GetNode<Sprite>("Enemysprite").Visible;
+                }
+                else if (dir == true && enemy.GlobalPosition.x < this.GlobalPosition.x)
+                {
+                    enemy.GetNode<Sprite>("Enemysprite").Visible = !enemy.GetNode<Sprite>("Enemysprite").Visible;
+                }
+            }
+            //attackcooldown = true;
+        }
+        
         
     }
 
-//    public o)verride void _Process(float delta)
-//    {
-//        // Called every frame. Delta is time since last frame.
-//            // Update game logic here.
-//        
-//    }
 }

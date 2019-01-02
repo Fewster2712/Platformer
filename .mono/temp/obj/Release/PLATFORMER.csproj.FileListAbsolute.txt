@@ -1,0 +1,2 @@
+C:\Users\olive\source\repos\Platformer\.mono\temp\obj\Release\PLATFORMER.csprojAssemblyReference.cache
+C:\Users\olive\source\repos\Platformer\.mono\temp\obj\Release\PLATFORMER.csproj.CoreCompileInputs.cache

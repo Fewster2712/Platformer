@@ -5,13 +5,13 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=4]
 
-[node name="Levelone" type="Node" index="0"]
+[node name="Levelone" type="Node"]
 
 script = ExtResource( 1 )
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
-position = Vector2( 193.119, -0.975342 )
+position = Vector2( 72.184, -1.87784 )
 mode = 0
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
@@ -33,7 +33,7 @@ _sections_unfolded = [ "Cell" ]
 
 [node name="Player" parent="." index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 614.855, 218.832 )
+position = Vector2( 492.115, 232.37 )
 
 [node name="Enemy" parent="." index="2" instance=ExtResource( 4 )]
 

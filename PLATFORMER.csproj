@@ -49,6 +49,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="attacktimer.cs" />
+    <Compile Include="Enemybody.cs" />
     <Compile Include="levels\Levelone.cs" />
     <Compile Include="PlayerBody.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

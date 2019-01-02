@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tile020.png-aba0b7ab5a472c342043ab8c8f5ae76b.stex"
+path="res://.import/tile020.png-9720b1883c2a3778ebd3c1979314a355.stex"
 
 [deps]
 
-source_file="res://Art/Map/tile020.png"
-dest_files=[ "res://.import/tile020.png-aba0b7ab5a472c342043ab8c8f5ae76b.stex" ]
+source_file="res://Map/tile020.png"
+dest_files=[ "res://.import/tile020.png-9720b1883c2a3778ebd3c1979314a355.stex" ]
 
 [params]
 

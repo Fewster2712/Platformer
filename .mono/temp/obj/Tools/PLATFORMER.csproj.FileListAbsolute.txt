@@ -1,0 +1,6 @@
+C:\Users\olive\source\repos\Platformer\.mono\temp\bin\Tools\PLATFORMER.dll
+C:\Users\olive\source\repos\Platformer\.mono\temp\bin\Tools\PLATFORMER.pdb
+C:\Users\olive\source\repos\Platformer\.mono\temp\obj\Tools\PLATFORMER.csprojAssemblyReference.cache
+C:\Users\olive\source\repos\Platformer\.mono\temp\obj\Tools\PLATFORMER.csproj.CoreCompileInputs.cache
+C:\Users\olive\source\repos\Platformer\.mono\temp\obj\Tools\PLATFORMER.dll
+C:\Users\olive\source\repos\Platformer\.mono\temp\obj\Tools\PLATFORMER.pdb
