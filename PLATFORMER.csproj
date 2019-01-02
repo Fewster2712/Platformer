@@ -49,6 +49,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="levels\Levelone.cs" />
     <Compile Include="PlayerBody.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

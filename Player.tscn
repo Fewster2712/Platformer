@@ -9,11 +9,11 @@
 [ext_resource path="res://Art/Player/run (5).png" type="Texture" id=7]
 [ext_resource path="res://Art/Player/run (7).png" type="Texture" id=8]
 [ext_resource path="res://Art/Player/run (6).png" type="Texture" id=9]
-[ext_resource path="res://Art/Player/fall.png" type="Texture" id=10]
-[ext_resource path="res://Art/Player/jump (1).png" type="Texture" id=11]
-[ext_resource path="res://Art/Player/jump (2).png" type="Texture" id=12]
-[ext_resource path="res://Art/Player/jump (3).png" type="Texture" id=13]
-[ext_resource path="res://Art/Player/jump (4).png" type="Texture" id=14]
+[ext_resource path="res://Art/Player/jump (1).png" type="Texture" id=10]
+[ext_resource path="res://Art/Player/jump (2).png" type="Texture" id=11]
+[ext_resource path="res://Art/Player/jump (3).png" type="Texture" id=12]
+[ext_resource path="res://Art/Player/jump (4).png" type="Texture" id=13]
+[ext_resource path="res://Art/Player/fall.png" type="Texture" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -33,19 +33,19 @@ animations = [ {
 "name": "run",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 10 ) ],
-"loop": false,
-"name": "fall",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
 "loop": false,
 "name": "jump",
 "speed": 8.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": false,
+"name": "fall",
+"speed": 0.0
 } ]
 _sections_unfolded = [ "Resource" ]
 
-[node name="Player" type="Node2D" index="0"]
+[node name="Player" type="Node2D"]
 
 position = Vector2( 427, 219 )
 __meta__ = {
